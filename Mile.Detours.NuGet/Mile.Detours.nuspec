@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:   Mouri Internal Library Essentials
+  FILE:      Mile.Detours.nuspec
+  PURPOSE:   NuGet package definition for Mile.Detours
+
+  LICENSE:   The MIT License
+
+  MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
+-->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Mile.Detours</id>
+    <version>1.0.0.0</version>
+    <description>The definition of Windows Internal API</description>
+    <authors>Kenji Mouri</authors>
+    <projectUrl>https://github.com/ProjectMile/Mile.Detours</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">License.md</license>
+    <readme>ReadMe.md</readme>
+    <repository type="git" url="https://github.com/ProjectMile/Mile.Detours.git" />
+  </metadata>
+  <files>
+  
+    <file src="..\Mile.Detours\**\*.*" target="Source\Native" />
+
+    <file src="Mile.Detours.props" target="build\native" />
+    <file src="Mile.Detours.targets" target="build\native" />
+
+    <file src="..\ReadMe.md" target="." />
+    <file src="..\License.md" target="." />
+    <file src="..\ReleaseNotes.md" target="." />
+
+  </files>
+</package>

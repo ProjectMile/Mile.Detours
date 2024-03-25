@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+   PROJECT:   Mouri Internal Library Essentials
+   FILE:      Mile.Detours.targets
+   PURPOSE:   MSBuild targets file for Mile.Detours
+
+   LICENSE:   The MIT License
+
+   MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="MileDetoursBuildNativeSource" BeforeTargets="BeforeClCompile">
+    <ItemGroup>
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\creatwth.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\detours.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\disasm.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\disolarm.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\disolarm64.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\disolia64.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\disolx64.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\disolx86.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\image.cpp" />
+      <ClCompile Include="$(MSBuildThisFileDirectory)..\..\Source\Native\modules.cpp" />
+    </ItemGroup>
+  </Target>
+</Project>
