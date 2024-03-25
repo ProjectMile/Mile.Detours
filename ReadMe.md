@@ -1,8 +1,8 @@
 ﻿# Mile.Detours
 
-The NuGet source code integration package version of Detours.
+The NuGet source code integration package version of [Detours].
 
-**Work In Progress**
+[Detours]: https://github.com/microsoft/Detours
 
 ## Documents
 
